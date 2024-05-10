@@ -1,4 +1,5 @@
 import { Container, Text, VStack, Heading, List, ListItem, ListIcon, Box } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 import { FaCheckCircle } from "react-icons/fa";
 
 const Index = () => {
@@ -10,6 +11,9 @@ const Index = () => {
         <Heading as="h1" size="xl">
           Local Business Directory Listings Tool
         </Heading>
+        <Link to="/submit" style={{ marginTop: "20px", textDecoration: "underline" }}>
+          Submit your business info
+        </Link>
         <Text fontSize="lg">Submit your business information to the following directories:</Text>
         <Box overflowY="auto" maxH="500px" w="100%" p={5} border="1px" borderColor="gray.200" borderRadius="md">
           <List spacing={3}>
